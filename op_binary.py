@@ -1,5 +1,4 @@
 import time # importamos librerias de tiempo para mostrar los resultados con un delay
-import math
 
 # funcion para realizar la suma de los numeros en binario 
 
