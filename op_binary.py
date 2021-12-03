@@ -48,6 +48,8 @@ def plus(bin2,bin3):
         elif save == 1 and bin2[i]==0 and bin3[i]==0:
             save =0
             bin4.append(1)
+        elif save == 1 and bin2[i]==1 and bin3[i]==1:
+            bin4.append(1)
             
     # si queda un residuo 1 al final de la operacion se agrega al resultado
     
@@ -63,6 +65,7 @@ def run():
     
     dec = int(input('ingrese su numero decimal: '))
     dec2 = int(input('ingrese segundo valor decimal: '))
+    dec3 = dec+dec2
     bin = []
     bin0 = []
     bin1 = []
@@ -92,7 +95,8 @@ def run():
     
     sum = plus(bin, bin1)
     time.sleep(1)
-    print('\n suma de binarios', sum[::-1], '\n')
+    print('\n suma de binarios', sum[::-1], 'equivale a ',dec3,'\n')
+    print('\n ')
     
 
 if __name__=='__main__':
